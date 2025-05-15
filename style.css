@@ -1,0 +1,103 @@
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: #f5f7fa;
+color: #333;
+line-height: 1.6;
+display: flex;
+justify-content: center;
+padding: 40px 20px;
+}
+
+.container {
+background: #ffffff;
+max-width: 600px;
+width: 100%;
+border-radius: 12px;
+padding: 30px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+margin: 0 auto 20px;
+border: 4px solid #0077cc;
+}
+
+h1, h2 {
+text-align: center;
+margin-bottom: 16px;
+color: #0077cc;
+}
+
+p {
+text-align: center;
+margin-bottom: 20px;
+}
+
+ul {
+list-style-type: none;
+padding-left: 0;
+text-align: center;
+}
+
+ul li {
+background: #eaf3ff;
+padding: 8px 12px;
+margin: 6px auto;
+max-width: 300px;
+border-radius: 8px;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 16px;
+margin: 20px 0;
+}
+
+.social-links a {
+color: #ffffff;
+background-color: #0077cc;
+padding: 8px 16px;
+border-radius: 6px;
+text-decoration: none;
+transition: background 0.3s;
+}
+
+.social-links a:hover {
+background-color: #005fa3;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+padding: 10px 14px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+}
+
+.contact-form button {
+background-color: #0077cc;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 6px;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.contact-form button:hover {
+background-color: #005fa3;
+}
