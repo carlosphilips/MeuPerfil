@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação Pessoal</title>
+    <title>Carlos Daniel</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=New+Rocker&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <img class="profile-img" src="imagem.jfif" alt="Foto de Perfil">
         <h1>Carlos Daniel</h1>
-        <p>Olá! Sou Carlos Daniel, apaixonado por tecnologia e inovação. Gosto de explorar novas ideias e compartilhar conhecimento.</p>
-        
+        <p>Olá! Sou Carlos Daniel, apaixonado por tecnologia e inovação. Gosto de explorar novas ideias e compartilhar
+            conhecimento.</p>
+
         <h2>Meus Hobbies e Interesses</h2>
         <ul>
             <li>Programação</li>
@@ -19,7 +26,7 @@
             <li>Fotografia</li>
             <li>Viagens</li>
         </ul>
-        
+
         <h2>Minhas Redes Sociais</h2>
         <div class="social-links">
             <a href="#">Instagram</a>
@@ -28,14 +35,36 @@
         </div>
 
         <h2>Entre em Contato</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu Email" required>
-            <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
+        <form class="contact-form" id="contact-form">
+            <input type="text" placeholder="Seu Nome" required id="nome-contato">
+            <input type="email" placeholder="Seu Email" required id="email-contato">
+            <textarea placeholder="Sua Mensagem" rows="4" required id="mensagem-contato"></textarea>
+            <button type="submit" onclick="dadosDeContato()">Enviar</button>
         </form>
     </div>
+    <div class="modal-overlay" id="inicio-modal-overlay">
+        <div class="modal-inicial" id="modal-inicial">
+            <form class="contact-form" id="form-inicial">
+                <h1>Bem-vindo</h1>
+                <h2>Por favor digite seu nome</h2>
+                <input type="text" id="input-nome" placeholder="Seu Nome" required>
+                <button type="submit" id="enter-inicial" onclick="fecharModalInicio()">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay" id="emergente-modal-overlay">
+        <div class="modal-emergente" id="modal-emergente">
+            <form class="contact-form" id="form-inicial">
+                <h1 id="welcome">Bem-vindo</h1>
+                <div class="bloco-centralizado">
+                    <h3>Esse sistema foi criado do zero com HTML, CSS e JavaScript — tudo aqui é código meu. Explore à
+                        vontade e conheça um pouco mais sobre quem sou e o que eu posso construir.</h3>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button id="dark-mode-toggle">🌙 Modo Escuro</button>
 </body>
+<script src="script.js"></script>
+
 </html>
-
-
